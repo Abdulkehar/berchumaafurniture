@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berchuma Furniture Sales Tracking</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+<div class="sidebar">
+    <a href="javascript:goToCurrentMonth()">Current Month</a>
+    <a href="javascript:previousMonth()">Previous Month</a>
+    <a href="javascript:nextMonth()">Next Month</a>
+    <a href="javascript:saveCurrentMonthData()">Save Data</a>
+</div>
+
+<div class="main-content">
+    <h1>Berchuma Furniture Sales Tracking for <span id="currentMonth">January</span></h1>
+
+    <div class="container">
+        <table id="paymentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Prepaid Amount</th>
+                    <th>Item Value</th>
+                    <th>Payment Date</th>
+                    <th>Furniture Type</th>
+                    <th>Manufacturing Days</th>
+                    <th>Confirmed Payment</th>
+                    <th>Delete Row</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Button section -->
+    <div style="text-align: center; margin-top: 10px;">
+        <button class="button" onclick="addRow()">Add Row</button>
+    </div>
+</div>
+
+<script src="script.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
